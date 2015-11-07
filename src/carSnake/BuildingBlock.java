@@ -193,6 +193,7 @@ public class BuildingBlock {
      */
     public void setBlockColor(Color color) {
         rectangle.setFill(color);
+        int m = 0;
     }
         /**
      * Sets the collor for this building block.
