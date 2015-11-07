@@ -186,6 +186,7 @@ public class BuildingBlock {
      */
     public int getBlockId() {
         return blockId;
+ 
     }
     /**
      * Sets the collor for this building block.
@@ -193,6 +194,7 @@ public class BuildingBlock {
      */
     public void setBlockColor(Color color) {
         rectangle.setFill(color);
+        int a = 0;
     }
         /**
      * Sets the collor for this building block.
