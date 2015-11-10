@@ -312,6 +312,16 @@ public class GameEngine extends Application {
             }
         }
     }
+    public static void stopOnetimeTimelines() {
+        for(Timeline timeline:onetimerTimelines) {
+            timeline.stop();
+        }
+    }
+    public static void stopOngoingTimelines() {
+        for(Timeline timeline:ongoingTimelines) {
+            timeline.stop();
+        }
+    }
     public static void setNumberOfPlayers(int toPlay) {
         numberToPlay = toPlay;
     }
