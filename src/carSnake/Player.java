@@ -219,7 +219,15 @@ public class Player extends MovableObject{
             setAlive(false);
             getLocation().setRIP(this);
             setMayMove(false);
-            GameEngine.gameOver();
+            GameEngine.stopOnetimeTimelines();
+            GameEngine.stopOngoingTimelines();
+            
+            Timeline timeline = new Timeline(new KeyFrame(Duration.millis(2000),ae -> 
+            GameEngine.gameOver()
+            ));
+            timeline.play();
+
+           // GameEngine.gameOver();
         }
 }
     private void changeDirectionRandomly() {
