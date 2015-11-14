@@ -65,8 +65,8 @@ public class GameEngine extends Application {
     private static final HashMap<KeyCode, Integer> player3Controls = new HashMap<>();
     private static final HashMap<KeyCode, Integer> player4Controls = new HashMap<>();
     
-    private static final ArrayList<Timeline> onetimerTimelines = new ArrayList<>();
-    private static final ArrayList<Timeline> ongoingTimelines = new ArrayList<>();
+    private static final HashSet<Timeline> onetimerTimelines = new HashSet<>();
+    private static final HashSet<Timeline> ongoingTimelines = new HashSet<>();
     
     public static int GAME_SPEED = 3;
     private static Stage battleStage;

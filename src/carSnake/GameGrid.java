@@ -92,6 +92,7 @@ public class GameGrid {
         KeyFrame kf = new KeyFrame( Duration.millis(DEATH_SLOWNESS), new EventHandler<ActionEvent>() {
             public void handle(ActionEvent ae) {
                 double t = (System.currentTimeMillis() - timeStart) / 1000.0; 
+                deathBuilder();
             }
         });
         deathLoop.getKeyFrames().add( kf );
